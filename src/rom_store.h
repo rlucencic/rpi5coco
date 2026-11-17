@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 /*
- * The Color Computer ROMs: files in the data folder's roms/
+ * The Color Computer ROMs: files in the machine's roms/ folder
  * (emu_rom_read()). Each has a name and, for some, another version that
  * also does (Color BASIC 1.2 for 1.3, Disk BASIC 1.0 for 1.1).
  */

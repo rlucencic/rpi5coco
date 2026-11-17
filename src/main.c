@@ -71,7 +71,7 @@ static bool start(void)
     if (coco3) {
         if (!load(ROM_COCO3)) {
             static char message[1400];
-            snprintf(message, sizeof(message), "No CoCo 3 ROM: copy coco3.rom into %s/roms.", emu_data_dir());
+            snprintf(message, sizeof(message), "No CoCo 3 ROM: copy coco3.rom into %s.", emu_rom_dir());
             emu_set_message(message);
             return false;
         }
@@ -79,7 +79,7 @@ static bool start(void)
     } else {
         if (!load(ROM_BASIC)) {
             static char message[1400];
-            snprintf(message, sizeof(message), "No Color BASIC ROM: copy bas13.rom into %s/roms.", emu_data_dir());
+            snprintf(message, sizeof(message), "No Color BASIC ROM: copy bas13.rom into %s.", emu_rom_dir());
             emu_set_message(message);
             return false;
         }

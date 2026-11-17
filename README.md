@@ -140,8 +140,8 @@ cmake -S . -B build -G Ninja && cmake --build build
 
 ### 3. ROMs
 
-In the data folder's `roms/` (`~/rpi5emu/roms`), named as esp32coco's:
-`bas13.rom` (or `bas12.rom`), `extbas11.rom`, `disk11.rom` (or
+In the data folder's `coco/roms/` (`~/rpi5emu/coco/roms`), named as
+esp32coco's: `bas13.rom` (or `bas12.rom`), `extbas11.rom`, `disk11.rom` (or
 `disk10.rom`) for the CoCo 2, `coco3.rom` for the CoCo 3. Not part of this
 repository.
 
@@ -197,7 +197,7 @@ flowchart LR
   EMU -- picture --> WIN
   EMU -- sound --> SND[SDL audio]
   WIN -- keys · mouse --> EMU
-  DATA[("~/rpi5emu<br>roms · coco")]
+  DATA[("~/rpi5emu<br>coco · coco/roms")]
   EMU <--> DATA
   WEB <--> DATA
 ```

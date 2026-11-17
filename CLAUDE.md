@@ -12,7 +12,7 @@ this project is the glue.
 |---|---|
 | `src/main.c` | The CoCo as an `emu_machine_t`: esp32coco's `main/main.c` through `../rpi5emu/tools/port_glue.py` and `port_finish.py`, then its two ROM messages |
 | `src/settings.c` | esp32coco's, over `emu/nvs.h` (section `coco`) |
-| `src/rom_store.c` | `~/rpi5emu/roms/` through `emu_rom_read()` (on the boards the card's `coco/roms`): bas13.rom ... coco3.rom |
+| `src/rom_store.c` | `~/rpi5emu/coco/roms/` through `emu_rom_read()` (as the boards' card's `coco/roms`): bas13.rom ... coco3.rom |
 
 Keep `src/main.c` in step with esp32coco's `main/main.c`.
 
